@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/base.css">
+  <title>Player Music</title>
+</head>
+<body>
+  <div class="app-backgr grid">
+    <div class="app grid wide">
+      <div class="music-container row">
+        <div class="music-navbar col l-1 m-3 c-1 ">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <i class="fa-solid fa-record-vinyl navbar-item-icon big"></i>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-house navbar-item-icon active"></i>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-music navbar-item-icon"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="music-modal col l-11 m-9 c-11"> 
+          <div class="music-modal-container ">
+              <div class="music-modal-play">
+                <div class="modal-play-head">
+                  <h1 class="play-head-title">Đề Xuất</h1>
+                  <i class="fa-solid fa-plus play-head-add "></i>
+                </div>
+                <ul class="modal-play-list">
+                  <li class="modal-play-item">
+                    <div class="modal-play-item-des">
+                     <div class="item-des-sub">
+                      <h1>Như anh đã thấy em</h1>
+                      <span>Phúc XP</span>
+                     </div>
+                     <div class="item-des-btn--play">
+                      <i class="fa-solid fa-plays"></i>
+                     </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="modal-play-cd">
+                  <div class="modal-play-cd-thumb"  style="background-image: url('./img/img1.jpeg');"></div>
+                </div>
+                <div class="modal-play-modal">
+                    <div class="play-modal-container">
+                      <span class="play-modal-name">Như anh yêu  từng thấy em</span>
+                      <br>
+                      <span class="play-modal-song">Phúc XP</span>
+                      <div class="play-modal-control">
+                       <div class="play-control-item">
+                          <i class="fa-solid fa-repeat play-control-item-icon"></i>
+                       </div>
+                       <div class="play-control-item btn-pre">
+                          <i class="fa-solid fa-backward-step play-control-item-icon"></i>
+                       </div>
+                       <div class="play-control-item" >
+                          <i class="fa-solid  fa-play  play-control-item-icon main  icon-play"></i>
+                          <i class="fa-solid  fa-pause play-control-item-icon main  icon-pause" ></i>
+                       </div >
+                       <div class="play-control-item btn-next">
+                          <i class="fa-solid fa-forward-step play-control-item-icon"></i>
+                       </div >
+                       <div class="play-control-item btn-random">
+                          <i class="fa-solid fa-shuffle play-control-item-icon"></i>
+                       </div>
+                      </div>
+                     <audio src="" id="audio"></audio>
+                     <input type="range" class="play-modal-range" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+              </div>
+              <div class="music-modal-home">
+                  <div class="modal-home-head">
+                    <h3 class="home-head-title">Trang chủ</h3>
+                    <div class="home-head-search">
+                      <i class="fa-regular fa-bell home-head-icon"></i>
+                      <input type="text" class="home-head-input" placeholder="tìm kiếm...!">
+                    </div>
+                  </div>
+                  <div class="modal-home-baner">
+                    <img class="home-baner-img" src="https://intphcm.com/data/upload/poster-am-nhac-dien-tu.jpg" alt="">
+                  </div>
+                  <div class="modal-home-trending">
+                    <div class="home-trending-head">
+                      <h1>Bài hát nổi bật</h1>
+                      <a href="">Xem tất cả</a>
+                    </div>
+                    <div class="home-trending-list">
+                     
+                    </div>
+                  </div>
+              </div>      
+          </div>  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
